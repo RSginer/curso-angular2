@@ -28,7 +28,7 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: "mi-app",
-                        template: "<h1>{{titulo}}</h1>\n                <ul>\n                <li>Titulo: <strong>{{pelicula}}</strong></li>\n                <li>Director:<strong> {{director}}</strong></li>\n                <li>A\u00F1o: <strong>{{anio}}</strong></li>\n                </ul>"
+                        templateUrl: "app/views/peliculas.html"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
