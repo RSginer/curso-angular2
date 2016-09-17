@@ -6,9 +6,20 @@ import {Component} from "angular2/core";
 })
 
 export class AppComponent{
-    public titulo:string = "Peliculas con angular 2";
-    public pelicula:string = "Bataman";
-    public director:string = "Zack Snider";
-    public anio:number = 2016;
+    public titulo:string;
+    public pelicula:string;
+    public director:string;
+    public anio:number;
     
+    constructor(){
+        this.titulo = "Peliculas con angular 2";
+        this.pelicula = "Batman";
+        this.director = "Zack Snider";
+        this.anio = 2016;
+        //this.holaMundo();
+    }
+    
+//    public holaMundo(){
+//        alert("Hola mundo desde Angular");
+//    }
 }
