@@ -4,9 +4,9 @@ import {Component} from "angular2/core";
     selector: "mi-app",
     template: `<h1>{{titulo}}</h1>
                 <ul>
-                <li>Titulo: {{pelicula}}</li>
-                <li>Director: {{director}}</li>
-                <li>Año: {{anio}}</li>
+                <li>Titulo: <strong>{{pelicula}}</strong></li>
+                <li>Director:<strong> {{director}}</strong></li>
+                <li>Año: <strong>{{anio}}</strong></li>
                 </ul>`
 })
 
