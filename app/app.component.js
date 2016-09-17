@@ -20,11 +20,15 @@ System.register(["angular2/core"], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.titulo = "Peliculas con angular 2";
+                    this.pelicula = "Bataman";
+                    this.director = "Zack Snider";
+                    this.anio = 2016;
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: "mi-app",
-                        template: "<h1>Hola mundo desde Angular 2!</h1>"
+                        template: "<h1>{{titulo}}</h1>\n                <ul>\n                <li>Titulo: {{pelicula}}</li>\n                <li>Director: {{director}}</li>\n                <li>A\u00F1o: {{anio}}</li>\n                </ul>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
