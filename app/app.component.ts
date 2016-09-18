@@ -3,7 +3,8 @@ import {Pelicula} from "./model/pelicula";
 
 @Component({
     selector: "mi-app",
-    templateUrl:"app/views/peliculas.html"
+    templateUrl:"app/views/peliculas.html",
+    styleUrls: ["assets/css/styles.css"]
 })
 
 export class AppComponent{
@@ -11,7 +12,7 @@ export class AppComponent{
     public pelicula:Pelicula;
     
     constructor(){
-        this.titulo="Listado de peliculas en Angular 2"
+        this.titulo="Peliculas en Angular 2"
         this.pelicula=new Pelicula(1,"Batman vs superman","Zack Snider", 2016);
         this.debug();
     }

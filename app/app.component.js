@@ -23,7 +23,7 @@ System.register(["angular2/core", "./model/pelicula"], function(exports_1, conte
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.titulo = "Listado de peliculas en Angular 2";
+                    this.titulo = "Peliculas en Angular 2";
                     this.pelicula = new pelicula_1.Pelicula(1, "Batman vs superman", "Zack Snider", 2016);
                     this.debug();
                 }
@@ -33,7 +33,8 @@ System.register(["angular2/core", "./model/pelicula"], function(exports_1, conte
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: "mi-app",
-                        templateUrl: "app/views/peliculas.html"
+                        templateUrl: "app/views/peliculas.html",
+                        styleUrls: ["assets/css/styles.css"]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
