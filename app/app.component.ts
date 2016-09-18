@@ -1,4 +1,5 @@
 import {Component} from "angular2/core";
+import {Pelicula} from "./model/pelicula";
 
 @Component({
     selector: "mi-app",
@@ -7,19 +8,15 @@ import {Component} from "angular2/core";
 
 export class AppComponent{
     public titulo:string;
-    public pelicula:string;
-    public director:string;
-    public anio:number;
+    public pelicula:Pelicula;
     
     constructor(){
-        this.titulo = "Peliculas con angular 2";
-        this.pelicula = "Batman";
-        this.director = "Zack Snider";
-        this.anio = 2016;
-        //this.holaMundo();
+        this.titulo="Listado de peliculas en Angular 2"
+        this.pelicula=new Pelicula(1,"Batman vs superman","Zack Snider", 2016);
+        this.debug();
     }
     
-//    public holaMundo(){
-//        alert("Hola mundo desde Angular");
-//    }
+    public debug(){
+        console.log(this.pelicula)
+    }
 }
