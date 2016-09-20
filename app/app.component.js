@@ -1,4 +1,4 @@
-System.register(["angular2/core", "./model/pelicula"], function(exports_1, context_1) {
+System.register(["angular2/core", "./components/peliculas-list.component", "./components/peliculasFooter.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,40 +10,29 @@ System.register(["angular2/core", "./model/pelicula"], function(exports_1, conte
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, pelicula_1;
+    var core_1, peliculas_list_component_1, peliculasFooter_component_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (pelicula_1_1) {
-                pelicula_1 = pelicula_1_1;
+            function (peliculas_list_component_1_1) {
+                peliculas_list_component_1 = peliculas_list_component_1_1;
+            },
+            function (peliculasFooter_component_1_1) {
+                peliculasFooter_component_1 = peliculasFooter_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.mostrarDatos = false;
-                    this.titulo = "Peliculas en Angular 2";
-                    this.peli = new pelicula_1.Pelicula(1, "Batman vs superman", "Zack Snider", 2016);
-                    this.listaPelis = [
-                        new pelicula_1.Pelicula(1, "Batman vs superman", "Zack Snider", 2016),
-                        new pelicula_1.Pelicula(2, "Marvel", "Alfonso", 2012),
-                        new pelicula_1.Pelicula(3, "Spiderman", "Ruben", 2015),
-                        new pelicula_1.Pelicula(4, "IronMan", "pepito", 2002)
-                    ];
+                    this.titulo = "Peliculas con Angular 2";
                 }
-                AppComponent.prototype.debug = function () {
-                    console.log(this.peli);
-                };
-                AppComponent.prototype.onShowHide = function (value) {
-                    this.mostrarDatos = value;
-                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: "mi-app",
                         templateUrl: "app/views/peliculas.html",
-                        styleUrls: ["assets/css/styles.css"]
+                        directives: [peliculas_list_component_1.PeliculasListComponent, peliculasFooter_component_1.PeliculasFooterComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

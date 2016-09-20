@@ -42,4 +42,4 @@ System.register([], function(exports_1, context_1) {
         }
     }
 });
-//# sourceMappingURL=pelicula.js.map
+//# sourceMappingURL=Pelicula.js.map
