@@ -18,15 +18,21 @@ System.register([], function(exports_1, context_1) {
                 Pelicula.prototype.setId = function (id) {
                     this.id = id;
                 };
-                Pelicula.prototype.getTitulo = function () { return this.titulo; };
+                Pelicula.prototype.getTitulo = function () {
+                    return this.titulo;
+                };
                 Pelicula.prototype.setTitulo = function (titulo) {
                     this.titulo = titulo;
                 };
-                Pelicula.prototype.getDirector = function () { return this.director; };
+                Pelicula.prototype.getDirector = function () {
+                    return this.director;
+                };
                 Pelicula.prototype.setDirector = function (director) {
                     this.director = director;
                 };
-                Pelicula.prototype.getAnio = function () { return this.anio; };
+                Pelicula.prototype.getAnio = function () {
+                    return this.anio;
+                };
                 Pelicula.prototype.setAnio = function (anio) {
                     this.anio = anio;
                 };

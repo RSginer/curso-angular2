@@ -1,3 +1,9 @@
+* {
+    font-family: Arial,Helvetica;
+}
 h1{
-    color:blue;
+    color:grey;    
+}
+.showingData{
+    display:none;
 }

@@ -10,8 +10,10 @@ import {Pelicula} from "./model/pelicula";
 export class AppComponent{
     public titulo:string;
     public pelicula:Pelicula;
+    public mostrarDatos:boolean;
     
     constructor(){
+        this.mostrarDatos=false;
         this.titulo="Peliculas en Angular 2"
         this.pelicula=new Pelicula(1,"Batman vs superman","Zack Snider", 2016);
         this.debug();
@@ -20,4 +22,10 @@ export class AppComponent{
     public debug(){
         console.log(this.pelicula)
     }
+    
+    public onShowHide(value){
+        this.mostrarDatos=value;
+    }
+    
+   
 }
