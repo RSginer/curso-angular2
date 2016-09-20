@@ -26,7 +26,12 @@ System.register(["angular2/core", "./model/pelicula"], function(exports_1, conte
                     this.mostrarDatos = false;
                     this.titulo = "Peliculas en Angular 2";
                     this.peli = new pelicula_1.Pelicula(1, "Batman vs superman", "Zack Snider", 2016);
-                    this.debug();
+                    this.listaPelis = [
+                        new pelicula_1.Pelicula(1, "Batman vs superman", "Zack Snider", 2016),
+                        new pelicula_1.Pelicula(2, "Marvel", "Alfonso", 2012),
+                        new pelicula_1.Pelicula(3, "Spiderman", "Ruben", 2015),
+                        new pelicula_1.Pelicula(4, "IronMan", "pepito", 2002)
+                    ];
                 }
                 AppComponent.prototype.debug = function () {
                     console.log(this.peli);
