@@ -25,11 +25,11 @@ System.register(["angular2/core", "./model/pelicula"], function(exports_1, conte
                 function AppComponent() {
                     this.mostrarDatos = false;
                     this.titulo = "Peliculas en Angular 2";
-                    this.pelicula = new pelicula_1.Pelicula(1, "Batman vs superman", "Zack Snider", 2016);
+                    this.peli = new pelicula_1.Pelicula(1, "Batman vs superman", "Zack Snider", 2016);
                     this.debug();
                 }
                 AppComponent.prototype.debug = function () {
-                    console.log(this.pelicula);
+                    console.log(this.peli);
                 };
                 AppComponent.prototype.onShowHide = function (value) {
                     this.mostrarDatos = value;
