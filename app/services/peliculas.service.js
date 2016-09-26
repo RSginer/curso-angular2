@@ -27,6 +27,9 @@ System.register(["angular2/core", "./moc-peliculas.service"], function(exports_1
                 PeliculasService.prototype.getPeliculas = function () {
                     return moc_peliculas_service_1.PELICULAS;
                 };
+                PeliculasService.prototype.setPelicula = function (pelicula) {
+                    Promise.resolve(moc_peliculas_service_1.PELICULAS).then(function (peliculas) { return peliculas.push(pelicula); });
+                };
                 PeliculasService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [])

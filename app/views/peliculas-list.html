@@ -13,7 +13,7 @@
 <hr/>
 <p>Listado de peliculas</p>
 <ul *ngFor="#peli of listaPelis">
-    <li (click)="onCambiarPelicula(peli)" class="pelicula-title" [class.clicked]="peliculaElegida.id === peli.id">Titulo: <strong>{{peli.titulo}}</strong></li>
+    <li (click)="onCambiarPelicula(peli)" class="pelicula-title" [class.clicked]="peliculaElegida.titulo === peli.titulo">Titulo: <strong>{{peli.titulo}}</strong></li>
     <li>Director:<strong> {{peli.director}}</strong></li>
     <li>Año: <strong>{{peli.anio}}</strong></li>
 </ul>

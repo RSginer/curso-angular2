@@ -10,8 +10,8 @@ h1{
 .pelicula-title{
     cursor: pointer;
 }
-.pelicula-title::hover{
-    text-decoration: underline;
+.pelicula-title:hover{
+    text-decoration: underline !important;
 }
 .clicked{
     font-size:20px;

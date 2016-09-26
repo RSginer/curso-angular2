@@ -1,0 +1,15 @@
+<h1>{{getTitulo()}}</h1>
+<p>Titulo:
+    <input type="text" #titulo />
+</p>
+<p>
+    Director:
+    <input type="text" #director />
+</p>
+<p>
+    Año:
+    <input type="text" #anyo />
+</p>
+<p>
+    <input type="submit" value="Crear Pelicula" (click)="onCrearPelicula(titulo.value,director.value,anyo.value)" />
+</p>
