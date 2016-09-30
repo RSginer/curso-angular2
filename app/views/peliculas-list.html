@@ -16,5 +16,5 @@
     <li (click)="onCambiarPelicula(peli)" class="pelicula-title" [class.clicked]="peliculaElegida.titulo === peli.titulo">Titulo: <strong>{{peli.titulo}}</strong></li>
     <li>Director:<strong> {{peli.director}}</strong></li>
     <li>Año: <strong>{{peli.anio}}</strong></li>
-    <li><a class="add-peli-basada" [routerLink]="['CrearPelicula',{titulo: peli.titulo}]">Añadir pelicula basada en esta</a></li>
+    <li><a class="add-peli-basada" [routerLink]="['CrearPeliculaBasadaEnOtra',{titulo: peli.titulo}]">Añadir pelicula basada en esta</a></li>
 </ul>
