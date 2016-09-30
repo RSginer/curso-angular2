@@ -1,8 +1,25 @@
 * {
-    font-family: Arial,Helvetica;
+    font-family: Raleway ,Arial,Helvetica;
+}
+html{
+    background-color: lightgrey;
+    margin:0px;
+    padding: 0px;
+}
+body{
+    width: 800px;
+    padding: 30px;
+    top:60px;
+    margin:0 auto;
+    text-align: justify;
+    background-color: white;
 }
 h1{
     color:grey;    
+}
+
+ul{
+    list-style: none;
 }
 .showingData{
     display:none;
@@ -16,5 +33,24 @@ h1{
 .clicked{
     font-size:20px;
     color:green;
+}
 
+.add-peli-basada{
+    background-color: azure;
+    text-decoration: none;
+    padding: 2px 15px;
+    margin:0px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:green;
+}
+.add-peli-basada:hover{
+    background-color: white;
+    color:black;
+}
+
+hr{
+    background-color:lightgreen;
+    border-color:lightblue;
 }

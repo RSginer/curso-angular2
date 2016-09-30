@@ -1,8 +1,9 @@
 import {Component} from "angular2/core";
 import {OnInit} from "angular2/core";
 import {Pelicula} from "../model/pelicula";
-import {Router, RouteParams} from "angular2/router";
+import {RouteConfig, ROUTER_DIRECTIVES,Router, RouteParams} from "angular2/router";
 import {PeliculasService} from "../services/peliculas.service";
+
 
 @Component({
     templateUrl:"app/views/crear-pelicula.html",
