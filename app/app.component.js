@@ -42,13 +42,17 @@ System.register(["angular2/core", "./components/peliculas-list.component", "./co
                     core_1.Component({
                         selector: "mi-app",
                         templateUrl: "app/views/peliculas.html",
-                        directives: [peliculas_list_component_1.PeliculasListComponent, peliculasFooter_component_1.PeliculasFooterComponent, router_1.ROUTER_DIRECTIVES, contacto_component_1.ContactoComponent, crear_pelicula_component_1.CrearPeliculaComponent]
+                        directives: [peliculas_list_component_1.PeliculasListComponent,
+                            peliculasFooter_component_1.PeliculasFooterComponent,
+                            router_1.ROUTER_DIRECTIVES,
+                            contacto_component_1.ContactoComponent,
+                            crear_pelicula_component_1.CrearPeliculaComponent]
                     }),
                     router_2.RouteConfig([
                         { path: "/peliculas", name: "Peliculas", component: peliculas_list_component_1.PeliculasListComponent, useAsDefault: true },
                         { path: "/contacto", name: "Contacto", component: contacto_component_1.ContactoComponent },
                         { path: "/crear-pelicula", name: "CrearPelicula", component: crear_pelicula_component_1.CrearPeliculaComponent },
-                        { path: "/crear-pelicula/:titulo", name: "CrearPeliculaBasadaEnOtra", component: crear_pelicula_component_1.CrearPeliculaComponent }
+                        { path: "/crear-pelicula/:titulo/:director/:anio", name: "CrearPeliculaBasadaEnOtra", component: crear_pelicula_component_1.CrearPeliculaComponent }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

@@ -20,6 +20,7 @@ h1{
 
 ul{
     list-style: none;
+    
 }
 .showingData{
     display:none;
@@ -52,4 +53,13 @@ ul{
 
 hr{
     border-color:lightblue;
+}
+
+input[type="text"].ng-invalid:focus{
+    background-color: red;
+    color:darkred;
+}
+input[type="text"].ng-valid:focus{
+    background-color: yellowgreen;
+    color:green;
 }

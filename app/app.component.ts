@@ -10,14 +10,18 @@ import {CrearPeliculaComponent} from "./components/crear.pelicula.component";
 @Component({
     selector: "mi-app",
     templateUrl: "app/views/peliculas.html",
-    directives: [PeliculasListComponent, PeliculasFooterComponent, ROUTER_DIRECTIVES, ContactoComponent, CrearPeliculaComponent]
+    directives: [PeliculasListComponent,
+                 PeliculasFooterComponent,
+                 ROUTER_DIRECTIVES,
+                 ContactoComponent,
+                 CrearPeliculaComponent]
 })
 
 @RouteConfig([
     { path: "/peliculas", name: "Peliculas", component: PeliculasListComponent, useAsDefault: true },
     { path: "/contacto", name: "Contacto", component: ContactoComponent },
     { path: "/crear-pelicula", name: "CrearPelicula", component: CrearPeliculaComponent },
-    { path: "/crear-pelicula/:titulo", name: "CrearPeliculaBasadaEnOtra", component: CrearPeliculaComponent }
+    { path: "/crear-pelicula/:titulo/:director/:anio", name: "CrearPeliculaBasadaEnOtra", component: CrearPeliculaComponent }
 ])
 
 export class AppComponent {

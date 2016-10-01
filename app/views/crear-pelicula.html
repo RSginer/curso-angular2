@@ -1,21 +1,21 @@
 <h1>{{getTitulo()}}</h1>
 <form #miformulario="ngForm" (ngSubmit)="onSubmit()">
 <p>Titulo:
-    <input type="text" #titulo="ngForm" ngControl="titulo" [(ngModel)]="nuevaPelicula.titulo" required/>
+    <input type="text" #titulo="ngForm" ngControl="titulo" [(ngModel)]="nuevaPelicula.titulo" required minlength="4"/>
     <span *ngIf="!titulo.valid">No Valido</span>
 </p>
 
 <p>
     Director:
-    <input type="text" #director="ngForm" ngControl="director" [(ngModel)]="nuevaPelicula.director" required/>
+    <input type="text" #director="ngForm" ngControl="director" [(ngModel)]="nuevaPelicula.director" required pattern="[A-Z,a-z]*"/>
     <span *ngIf="!director.valid">No Valido</span>
 </p>
 <p>
     Año:
-    <input type="text" #anio="ngForm" ngControl="anio" [(ngModel)]="nuevaPelicula.anio" required/>
+    <input type="text" #anio="ngForm" ngControl="anio" [(ngModel)]="nuevaPelicula.anio" required pattern="[0-9]{4}"/>
     <span *ngIf="!anio.valid">No Valido</span>
 </p>
 <p>
-    <input type="submit" value="Crear Pelicula" />
+    <input type="submit" value="Crear Pelicula" [disabled]="!miformulario.form.valid" />
 </p>
 </form>
