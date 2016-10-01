@@ -13,25 +13,31 @@ import {PeliculasService} from "../services/peliculas.service";
 export class CrearPeliculaComponent implements OnInit{
         private titulo:string="Crear pelicula";
         public tituloPelicula ="";
-
+        public nuevaPelicula:Pelicula;
         constructor(private _peliculasService: PeliculasService,
          private _router: Router,
          private _routeParams: RouteParams){
 
         }
 
+
         public getTitulo():string{
             return this.titulo;
         }
 
 
-        onCrearPelicula(titulo, director, anyo){
-            let pelicula: Pelicula=new Pelicula(99,titulo,director,anyo);
-            this._peliculasService.setPelicula(pelicula);
+        onSubmit(){
+            this._peliculasService.setPelicula(this.nuevaPelicula);
             this._router.navigate(["Peliculas"]);
         }
 
         ngOnInit():any{
             this.tituloPelicula = this._routeParams.get("titulo");
+            this.nuevaPelicula = new Pelicula(
+                0,
+                this._routeParams.get("titulo"),
+                this._routeParams.get("director"),
+                this._routeParams.get("anio")
+            );
         }
 }

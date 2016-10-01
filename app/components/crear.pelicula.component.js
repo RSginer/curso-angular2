@@ -38,13 +38,13 @@ System.register(["angular2/core", "../model/pelicula", "angular2/router", "../se
                 CrearPeliculaComponent.prototype.getTitulo = function () {
                     return this.titulo;
                 };
-                CrearPeliculaComponent.prototype.onCrearPelicula = function (titulo, director, anyo) {
-                    var pelicula = new pelicula_1.Pelicula(99, titulo, director, anyo);
-                    this._peliculasService.setPelicula(pelicula);
+                CrearPeliculaComponent.prototype.onSubmit = function () {
+                    this._peliculasService.setPelicula(this.nuevaPelicula);
                     this._router.navigate(["Peliculas"]);
                 };
                 CrearPeliculaComponent.prototype.ngOnInit = function () {
                     this.tituloPelicula = this._routeParams.get("titulo");
+                    this.nuevaPelicula = new pelicula_1.Pelicula(0, this._routeParams.get("titulo"), this._routeParams.get("director"), this._routeParams.get("anio"));
                 };
                 CrearPeliculaComponent = __decorate([
                     core_1.Component({
